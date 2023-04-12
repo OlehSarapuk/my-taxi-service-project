@@ -1,8 +1,8 @@
 <h1><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOWdut794eIE4UCGs7dZflfwFwIDQsj3Ma_A&usqp=CAU" width="50" height="50"/> Taxi Service <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOWdut794eIE4UCGs7dZflfwFwIDQsj3Ma_A&usqp=CAU" alt="My Image" width="50" height="50"/></h1>
 
-This project is designed to function as a simplified version of a real taxi service.<br> 
-Authenticated users have the ability to add or delete<br>
-information pertaining to cars, manufacturers, and drivers.<br>
+This project is designed to function as a simplified version of a real taxi service.
+Authenticated users have the ability to add or delete
+information pertaining to cars, manufacturers, and drivers.
 Additionally, users can check for the existence of specific entities within the system as needed.
 
 ## Features
