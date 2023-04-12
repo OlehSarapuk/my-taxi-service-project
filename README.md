@@ -5,7 +5,7 @@ Authenticated users have the ability to add or delete
 information pertaining to cars, manufacturers, and drivers.
 Additionally, users can check for the existence of specific entities within the system as needed.
 
-## Features
+## Functionality
 <ul>
   <li>Authentication</li>
   <li>Add or delete drivers</li>
@@ -55,6 +55,15 @@ Additionally, users can check for the existence of specific entities within the 
 <li>webapp: Contains web resources such as CSS, and JSP files</li>
 <li>WEB-INF: Contains configuration files for the web application</li>
 <li>views: Contains JSP files used as views in the application and css files</li>
+</ul>
+
+## Features employed in project
+<ul>
+  <li>Three-level architecture</li>
+  <li>SOLID</li>
+  <li>Custom exceptions</li>
+  <li>Autorisarion (only loggen in person can access different pages)</li>
+  <li>The pages have a slight hint of style</li>
 </ul>
 
 ## Used technologies:
