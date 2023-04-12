@@ -11,13 +11,11 @@ import taxi.service.DriverService;
 
 @Service
 public class DriverServiceImpl implements DriverService {
-    private static final String SALT = "salt";
     @Inject
     private DriverDao driverDao;
 
     @Override
     public Driver create(Driver driver) {
-        hashDriverPassword(driver);
         return driverDao.create(driver);
     }
 
@@ -46,9 +44,5 @@ public class DriverServiceImpl implements DriverService {
     @Override
     public Optional<Driver> findByLogin(String login) {
         return driverDao.findByLogin(login);
-    }
-
-    private void hashDriverPassword(Driver driver) {
-        driver.setPassword((driver.getPassword() + SALT).hashCode() + "");
     }
 }

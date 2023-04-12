@@ -11,7 +11,6 @@ import taxi.service.DriverService;
 
 @Service
 public class AuthenticationServiceImpl implements AuthenticationService {
-    private static final String SALT = "salt";
     @Inject
     private DriverService driverService;
 
@@ -19,14 +18,9 @@ public class AuthenticationServiceImpl implements AuthenticationService {
     public Driver login(String login, String password) throws AuthentificationException {
         Optional<Driver> driver = driverService.findByLogin(login);
         if (driver.isPresent()
-                && Objects.equals(driver.get().getPassword(),
-                getHashedDriverPassword(password))) {
+                && Objects.equals(driver.get().getPassword(), password)) {
             return driver.get();
         }
         throw new AuthentificationException("Login or password was incorrect");
-    }
-
-    private String getHashedDriverPassword(String password) {
-        return (password + SALT).hashCode() + "";
     }
 }
